@@ -8,7 +8,6 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Rajind
  * @Edited Estefanie
  */
 public class Extractor {
