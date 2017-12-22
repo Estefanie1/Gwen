@@ -1,0 +1,14 @@
+ void addSaveButtonListener(){
+        Button saveBtn = (Button)findViewById(R.id.save);
+
+        saveBtn.serOnClickListener(new View.OnCLickListener() {
+            public void onClick(View v) {
+
+                EditText editText = (EditText)findViewById(R.id.text);
+
+                String text = edditText.getText().toString();
+
+                Log.d(DEBUGTAG, "Save button clicked");
+            }
+        });
+    }
