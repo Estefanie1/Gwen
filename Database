@@ -1,0 +1,13 @@
+public class MemoryDatabaseBuilder extends RoomDatabase{
+    @Database(version = 1, entities= {SSIR.class, NameWifi.class})
+    abstract class AppDatabase extends RoomDatabase() {
+        //NameDao is a class annotated with @Dao.
+        abstract public NameWifiDao nameWifiDao();
+        //SSIR is a class annotated with @Dao
+        abstract public SSIRDAO ssirDao();
+        //SSIRNameDao is a class annotated with @Dao
+        abstract public SSIRNameDao ssirNameWifiDao();
+    }
+
+
+}
